@@ -1,6 +1,7 @@
 
 // kPromDef.js
 
+
 var kPromDef = (function() {
 	var Promise = function () {
 		var dflt = function(d) {
