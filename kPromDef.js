@@ -48,7 +48,7 @@ var kPromDef = (function() {
 						callbackData.deferred.resolve(res);
 					}
 				}, 0);
-			};
+			}
 		 };
 	 },
 	 Deferred = function () {
@@ -81,7 +81,7 @@ var kPromDef = (function() {
 				}, function (err) {
 					slf.reject(err);
 				});
-			};
+			}
 		};
 	};
 	return {
