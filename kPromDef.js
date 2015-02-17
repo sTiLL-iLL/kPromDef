@@ -85,4 +85,3 @@ var kPromDef = {
 		};
 	}
 }
-
