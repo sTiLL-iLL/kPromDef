@@ -1,13 +1,12 @@
 
 // kPromDef.js
 
-
-var kPromDef = (function() {
-	var Promise = function () {
+var kPromDef = {
+	Promise: function () {
 		var dflt = function(d) {
 			d = (d || true);
 			return d;
-		};
+		}
 		return {
 			status: 'pending',
 			error: null,
@@ -52,7 +51,7 @@ var kPromDef = (function() {
 			}
 		 };
 	 },
-	 Deferred = function () {
+	 Deferred: function () {
 		return {
 			promise: new Promise(),
 			resolve: function (data) {
@@ -84,10 +83,6 @@ var kPromDef = (function() {
 				});
 			}
 		};
-	};
-	return {
-		Promise: Promise,
-		Deferred: Deferred
 	}
-}());
+}
 
